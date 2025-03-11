@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberica AD</title>
+    <style>
+        .alladcontainer{
+            width: 300px;
+            height: 160px;
+            border-radius: 10px;
+            background: linear-gradient(rgb(197, 196, 196),rgb(107, 103, 103),black);
+            color: white;
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif ;
+            margin-top: 20%;
+            margin-left: 40%;
+            position: absolute;
+        }
+        .h3{
+            color: rgb(0, 0, 0);
+        }
+        .h1{
+            background-color: rgb(0, 0, 0);
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            font-size: 16px;
+            margin-left: 274px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .button{
+            width: 60px;
+            height: 35px;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            background-color: rgb(109, 182, 250);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="alladcontainer" id="alladcontainer">
+        <h1 class="h1" id="cancel">❌</h1>
+        <h3 class="h3">Hello Again</h3>
+        <p class="p">This App Was Made By Cyberica</p>
+        <button class="button">Login</button>
+    </div>
+    <script>
+        let alladcontainer=document.getElementById("alladcontainer");
+        let cancel = document.getElementById("cancel").addEventListener('click',()=>{
+       alladcontainer.style.display="none";
+        })
+    </script>
+</body>
+</html>

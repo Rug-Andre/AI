@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyberica AI</title>
+
+  <!-- Favicon (ensure the image is either .ico, .png, or .jpg) -->
+  <link rel="icon" href="images/Screenshot 2025-02-02 163931.png" type="image/jfif">
+
+  <!-- Meta Description -->
+  <meta name="description" content="Cyberica AI is here to assist you with all your digital needs. Experience a smarter way of solving problems.">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Cyberica AI">
+  <meta property="og:description" content="Cyberica AI is here to assist you with all your digital needs. Experience a smarter way of solving problems.">
+  <meta property="og:image" content="images/Screenshot 2025-02-02 163931.png">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cyberica AI ">
+  <meta name="twitter:description" content="Cyberica AI is here to assist you with all your digital needs. Experience a smarter way of solving problems.">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  </script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .alladcontainer{
+        width: 300px;
+        height: 160px;
+        border-radius: 10px;
+        background: linear-gradient(rgb(197, 196, 196),rgb(107, 103, 103),black);
+        color: white;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif ;
+        margin-top: 20%;
+        margin-left: 40%;
+        display: none;
+        position: absolute;
+    }
+    .h3{
+        color: rgb(0, 0, 0);
+    }
+    .h1{
+        background-color: rgb(0, 0, 0);
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        font-size: 16px;
+        margin-left: 274px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .button{
+        width: 60px;
+        height: 35px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        background-color: rgb(109, 182, 250);
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+  <!-- Chatbot Toggler -->
+
+  <!-- Chatbot Header -->
+
+  <div class="chat-header">
+    <div class="header-info">
+      <img src="images/Screenshot 2025-02-02 163931.png" height="50px" width="50px" alt="Assistant Logo">
+      <!-- <h2 class="logo-text">Cyberica AI</h2> -->
+    </div>
+    <h2 class="logo-text">Cyberica AI</h2>
+    <!-- <button id="close-chatbot" class="material-symbols-rounded">keyboard_arrow_down</button> -->
+  </div>
+
+  <!-- Chatbot Body -->
+  <div class="all" id="all">
+  <div class="chat-body">
+    <div class="message bot-message">
+      <!-- <svg class="bot-avatar" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024">
+        <path d="M738.3 287.6H285.7c-59 0-106.8 47.8-106.8 106.8v303.1c0 59 47.8 106.8 106.8 106.8h81.5v111.1c0 .7.8 1.1 1.4.7l166.9-110.6 41.8-.8h117.4l43.6-.4c59 0 106.8-47.8 106.8-106.8V394.5c0-59-47.8-106.9-106.8-106.9zM351.7 448.2c0-29.5 23.9-53.5 53.5-53.5s53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5-53.5-23.9-53.5-53.5zm157.9 267.1c-67.8 0-123.8-47.5-132.3-109h264.6c-8.6 61.5-64.5 109-132.3 109zm110-213.7c-29.5 0-53.5-23.9-53.5-53.5s23.9-53.5 53.5-53.5 53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5zM867.2 644.5V453.1h26.5c19.4 0 35.1 15.7 35.1 35.1v121.1c0 19.4-15.7 35.1-35.1 35.1h-26.5zM95.2 609.4V488.2c0-19.4 15.7-35.1 35.1-35.1h26.5v191.3h-26.5c-19.4 0-35.1-15.7-35.1-35.1zM561.5 149.6c0 23.4-15.6 43.3-36.9 49.7v44.9h-30v-44.9c-21.4-6.5-36.9-26.3-36.9-49.7 0-28.6 23.3-51.9 51.9-51.9s51.9 23.3 51.9 51.9z"></path>
+      </svg> -->
+      <!-- <div class="message-text">
+        Hey there 🤟<br>
+        Welcome to Cyberica AI.<br>
+        How can I Assist you today?
+      </div> -->
+    </div>
+  </div>
+
+  <!-- Chatbot Footer -->
+  <div class="chat-footer">
+    <h2 class="h2">What can I help you with?</h2>
+    <form action="#" class="chat-form">
+      <textarea placeholder="Message Cyberica AI" class="message-input" required=""></textarea>
+      <div class="chat-controls">
+        <button type="button" id="emoji-picker" class="material-symbols-outlined">sentiment_satisfied</button>
+        <div class="file-upload-wrapper">
+          <input type="file" accept="image/*" id="file-input" hidden="">
+          <button type="button" id="file-upload" class="material-symbols-rounded">attach_file</button>
+          <button type="button" id="file-cancel" class="material-symbols-rounded">close</button>
+         
+        </div>
+        <button type="submit" id="send-message" class="material-symbols-rounded">arrow_upward</button>
+        <!-- <button type="submit" id="send-message" class="material-symbols-rounded">arrow_upward</button> -->
+      </div>
+      
+    </form>
+    <div class="smalldivcontainer" id="smalldivcontainer">
+      <div class="smalldiv" id="smalldiv"><p>Brainstorm</p></div>
+      <div class="smalldiv" id="smalldiv"><p>Generate codes</p></div>
+      <div class="smalldiv" id="smalldiv"><p>Summarize Text</p></div>
+      <div class="smalldiv" id="smalldiv"><p>Conversation</p></div>
+      <div class="smalldiv" id="smalldiv"><p>Advise me</p></div>
+ 
+  </div>
+  <p class="disclaimer">Cyberica AI made by MAHIRWE Rene Christian</p>
+</div>
+<div class="alladcontainer" id="alladcontainer">
+  <h1 class="h1" id="cancel">❌</h1>
+  <h3 class="h3">Hello Again</h3>
+  <p class="p">This App Was Made By Cyberica</p>
+  <button class="button">Login</button>
+</div>
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(event) {
+      event.preventDefault();
+      alert("You are not allowed to inspect this website except Mr.Rene");
+    });
+
+    // Disable developer tools shortcuts
+    document.addEventListener('keydown', function(event) {
+      if (
+        event.key === 'F12' || 
+        (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'J')) || 
+        (event.ctrlKey && event.key === 'U')
+      ) {
+        event.preventDefault();
+        alert("You are not allowed to perform this action.");
+      }
+    });
+  // renead
+  function renead(){
+    let all=document.getElementById('all');
+    setTimeout(()=>{
+      all.style.display="block";
+    },6000)
+  }
+  </script>
+      <script>
+        let alladcontainer=document.getElementById("alladcontainer");
+        let cancel = document.getElementById("cancel").addEventListener('click',()=>{
+       alladcontainer.style.display="none";
+        })
+    </script>
+  <script src="js/browser.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body></html>
